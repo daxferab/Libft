@@ -34,7 +34,7 @@ int main(void)
     int char1 = 'o';
     char *result1 = ft_strchr(str1, char1);
     printf("Original String: \"%s\"\nCharacter:\
-	 '%c'\nResult: %s\n\n", str1, char1, result1);
+	'%c'\nResult: %s\n\n", str1, char1, result1);
 
     return 0;
 }
