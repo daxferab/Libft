@@ -80,7 +80,7 @@ Returns the given pointer, filling up to *len* positions with null
 
 #### ft_putnbr_fd.c
 
-### Bonus part (working with lists)
+## Bonus part (working with lists)
 #### ft_lstnew.c
 
 #### ft_lstnew.c
