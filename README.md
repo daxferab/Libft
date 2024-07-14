@@ -41,9 +41,9 @@ Returns the position of the first occurency of the given character in the given 
 #### ft_memcmp.c
 Compares the given strings, if they are different, it returns the character difference (in ascii decimal) up to *n* characters, else, it returns 0
 #### ft_strnstr.c
-returns the position of the first *needle* character in *haystack*. If *nee* isn't inside *hay*, it returns 0.
+returns the position of the first *needle* character in *haystack*. If *nee* isn't inside *hay*, it returns 0
 #### ft_atoi.c
-Changes a type string to a type int.
+Changes a type string to a type integer
 #### ft_calloc.c
 Allocates an array of size *size\*count* and fills it with nulls
 #### ft_strdup.c
@@ -56,38 +56,37 @@ Allocates and returns a string, concatenating the two given strings
 #### ft_strtrim.c
 Allocates and returns a string like *s1*, but deleting every occurency of the characters in *set*
 #### ft_split.c
-
+Allocates and returns an array of strings, separating the given string, using the given character as a delimiter
 #### ft_itoa.c
-
+Allocates an returns a string representing the given integer
 #### ft_strmapi.c
-
+Allocates and returns the given string, previously formated with the given function
 #### ft_striteri.c
-
+Applies the given function to each character of the given string
 #### ft_putchar_fd.c
-
+Sends the given character to the given file descriptor
 #### ft_putstr_fd.c
-
+Sends the given string to the given file descriptor
 #### ft_putendl_fd.c
-
+Sends the "nextline" character to the given file descriptor
 #### ft_putnbr_fd.c
-
+Sends the given number to the given file descriptor
 ## Bonus part (working with lists)
 #### ft_lstnew.c
-
-#### ft_lstnew.c
-
+Creates a new node, allocated with malloc, initializing it with the given parameter
 #### ft_lstadd_front.c
-
+Adds the given node to the beggining of the given list
 #### ft_lstsize.c
-
+Returns the size of the given list
 #### ft_lstlast.c
-
+Returns the last node of the given list
 #### ft_lstadd_back.c
-
+Adds the given node to the end of the given list
 #### ft_lstdelone.c
-
+Deletes memory of the given node and frees the node
 #### ft_lstclear.c
-
+Deletes and frees the given node and all the next ones
 #### ft_lstiter.c
-
+Applies the given function to each node of the given list
 #### ft_lstmap.c
+Same as **ft_lstiter**, but creating a new list with the "new" nodes
