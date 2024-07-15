@@ -19,13 +19,13 @@ Returns the given pointer, filling up to *len* positions with the given characte
 #### ft_bzero.c
 Returns the given pointer, filling up to *len* positions with null
 #### ft_memcpy.c
-
+Copies *len* bytes from *src* to *dest*
 #### ft_memmove.c
-
+Copies *len* bytes from *src* to *dest*, controlling overlap
 #### ft_strlcpy.c
-
+Copies up to *size* -1 bytes from *src* to *dest*
 #### ft_strlcat.c
-
+Copies *src* at the end of *dest* until *dst* has *dstsize* (or less) 
 #### ft_toupper.c
 Returns the uppercase of the given character (only if its a letter)
 #### ft_tolower.c
