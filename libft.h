@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 18:10:16 by daxferna          #+#    #+#             */
-/*   Updated: 2024/12/24 16:39:10 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:32:06 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@
 # include <unistd.h>
 # include <stddef.h>
 # include <stdarg.h>
+# include <fcntl.h>
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 100000
+# endif
 
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
@@ -83,5 +87,15 @@ int				ft_printptr(size_t ptr);
 int				ft_printstr(char *c);
 int				ft_putuns(unsigned int num, int bytes);
 int				ft_printuns(int num);
+
+// GET_NEXT_LINE
+
+char			*get_next_line(int fd);
+int				ft_findnl(char *str);
+char			*ft_getline(char *str);
+char			*ft_updatestatic(char *str);
+void			*ft_calloc(size_t count, size_t size);
+char			*ft_read(int fd, char *remainder, char *buffer);
+
 
 #endif
