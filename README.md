@@ -90,3 +90,11 @@ Deletes and frees the given node and all the next ones
 Applies the given function to each node of the given list
 #### ft_lstmap.c
 Same as **ft_lstiter**, but creating a new list with the "new" nodes
+## Printf
+#### ft_printf.c
+#### ft_printchar.c
+#### ft_printhex.c
+#### ft_printnbr.c
+#### ft_printptr.c
+#### ft_printstr.c
+#### ft_printuns.c
