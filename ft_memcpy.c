@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 21:32:33 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:09:48 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:12:14 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t len)
 		ft_memset(dst++, *(const char *)src++, 1);
 	return (start);
 }
-
-/*
-int main(void)
-{
-    char src[] = "Hello, World!";
-    char dest[20];
-
-    ft_memcpy(dest, src, ft_strlen(src) + 1);
-    printf("Copied String: %s\n", dest);
-
-    return 0;
-}
-*/

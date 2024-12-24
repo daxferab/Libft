@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 18:20:21 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:47:58 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:11:51 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,52 +36,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-
-/*
-void *add_ten(void *content)
-{
-    int *result = malloc(sizeof(int));
-    *result = *((int *)content) + 10;
-    return result;
-}
-
-void print_list(t_list *lista, void (*print_content)(void *))
-{
-    while (lista)
-    {
-        print_content(lista->content);
-        if (lista->next)
-            printf(" ");
-        lista = lista->next;
-    }
-}
-
-void print_int(void *content)
-{
-    printf("%d", *((int *)content));
-}
-
-int main()
-{
-    t_list *lista = malloc(sizeof(t_list));
-    int *dato1 = malloc(sizeof(int)), *dato2 = malloc(sizeof(int));
-    *dato1 = 42, *dato2 = 73;
-    lista->content = dato1, lista->next = malloc(sizeof(t_list));
-    lista->next->content = dato2, lista->next->next = NULL;
-
-    printf("Lista Original: ");
-    print_list(lista, &print_int);
-    printf("\n");
-
-    t_list *nueva_lista = ft_lstmap(lista, &add_ten, &free);
-
-    printf("Lista Despues: ");
-    print_list(nueva_lista, &print_int);
-    printf("\n");
-
-    ft_lstclear(&lista, &free);
-    ft_lstclear(&nueva_lista, &free);
-
-    return 0;
-}
-*/

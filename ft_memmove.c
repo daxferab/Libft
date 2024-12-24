@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 00:28:55 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:09:45 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:12:19 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,3 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 		((char *)dst)[i] = ((char *)src)[i];
 	return (dst);
 }
-
-/*
-int main(void)
-{
-    char str[] = "Hello, World!";
-    char buffer[20];
-
-    ft_memmove(buffer, str, ft_strlen(str) + 1);
-
-    printf("Moved String: %s\n", buffer);
-
-    return 0;
-}
-*/

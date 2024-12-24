@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 01:12:48 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:06:43 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:09:36 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,14 +50,3 @@ int	ft_atoi(const char *str)
 		res = res * 10 + (*str++ - '0');
 	return (res * neg);
 }
-
-/*
-int main(void)
-{
-    const char *str = "12345";
-
-    int result = ft_atoi(str);
-    printf("Input: \"%s\", Result: %d\n", str, result);
-    return 0;
-}
-*/

@@ -36,19 +36,3 @@ char	*ft_strnstr(const char *hay, const char *nee, size_t len)
 	}
 	return (NULL);
 }
-
-/*
-int main()
-{
-    const char *haystack = "Hello, world! Hello";
-    const char *needle = "world";
-    size_t len = 20;
-
-    char *resultado = ft_strnstr(haystack, needle, len);
-
-    if (resultado != 0)
-        printf("Found in position %ld.\n", resultado - haystack);
-
-    return 0;
-}
-*/

@@ -1,29 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_printstr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: daxferna <daxferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/26 18:53:08 by daxferna          #+#    #+#             */
-/*   Updated: 2024/12/24 17:13:33 by daxferna         ###   ########.fr       */
+/*   Created: 2024/03/20 17:07:28 by daxferab          #+#    #+#             */
+/*   Updated: 2024/10/16 13:46:51 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+int	ft_printstr(char *c)
 {
-	size_t	i;
-
-	i = 0;
-	if (size == 0)
-		return (ft_strlen(src));
-	while (i + 1 < size && src[i] != 0)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = 0;
-	return (ft_strlen(src));
+	if (!c)
+		return (write(1, "(null)", 6));
+	return (write(1, c, ft_strlen(c)));
 }

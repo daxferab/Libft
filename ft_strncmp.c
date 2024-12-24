@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/27 00:03:45 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:08:49 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:13:50 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,18 +30,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-/*
-int main()
-{
-    const char *cadena1 = "Hola, mundo!";
-    const char *cadena2 = "Hola, que tal!";
-    size_t n = 10;
-
-    int resultado = ft_strncmp(cadena1, cadena2, n);
-
-    printf("Resultado: %d", resultado);
-
-    return 0;
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 21:28:55 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:08:36 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:14:01 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,22 +50,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(p, s1 + i, j - i + 2);
 	return (p);
 }
-
-/*
-int main()
-{
-    const char *cadena = "   Hola, mundo!   ";
-    const char *set = " ";
-
-    char *resultado = ft_strtrim(cadena, set);
-
-    if (resultado != 0)
-	{
-        printf("Cadena original: \"%s\"\n", cadena);
-        printf("Cadena nueva: \"%s\"\n", resultado);
-        
-        free(resultado);
-	}
-    return 0;
-}
-*/

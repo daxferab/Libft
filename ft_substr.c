@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 03:14:33 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:07:58 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:14:05 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,23 +36,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	p[i] = 0;
 	return (p);
 }
-
-/*
-int main()
-{
-    const char *cadena = "Ejemplo substring";
-    unsigned int inicio = 7;
-    size_t longitud = 10;
-
-    char *resultado = ft_substr(cadena, inicio, longitud);
-
-    if (resultado != 0)
-	{
-        printf("Cadena original: \"%s\"\n", cadena);
-        printf("Substring:%s", resultado);
-
-        free(resultado);
-    }
-    return 0;
-}
-*/

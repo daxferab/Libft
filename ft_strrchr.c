@@ -25,18 +25,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-
-/*
-int main()
-{
-    const char *cadena = "Hola, mundo!";
-    char caracter = 'o';
-
-    char *resultado = ft_strrchr(cadena, caracter);
-
-    if (resultado != 0)
-        printf("Found in position %ld.\n", resultado - cadena);
-
-    return 0;
-}
-*/

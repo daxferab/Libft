@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 21:06:14 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:05:31 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:14:08 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-
-/*
-int	main()
-{
-	char	resultado = ft_tolower('A');
-	printf("Minúsculas: %c", resultado);
-}
-*/

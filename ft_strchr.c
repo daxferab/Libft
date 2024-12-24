@@ -25,17 +25,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-
-/*
-int main(void)
-{
-
-    char *str1 = "Hello, World!";
-    int char1 = 'o';
-    char *result1 = ft_strchr(str1, char1);
-    printf("Original String: \"%s\"\nCharacter:\
-	'%c'\nResult: %s\n\n", str1, char1, result1);
-
-    return 0;
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 18:10:16 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:08:20 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 16:39:10 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stddef.h>
-# include <stdio.h>
-# include <string.h> 
+# include <stdarg.h>
 
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
@@ -47,12 +46,15 @@ char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
+int				ft_numlen(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_striteri(char *s, void (*f)(unsigned int, char*));
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
+
+// BONUS
 
 typedef struct s_list
 {
@@ -70,4 +72,16 @@ void			ft_lstclear(t_list **lst, void (*del)(void*));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *), \
 void (*del)(void *));
+
+// FT_PRINTF
+
+int				ft_printf(char const *str, ...);
+int				ft_printchar(int c);
+int				ft_printhex(size_t num, char *hex_list);
+int				ft_printnbr(int num);
+int				ft_printptr(size_t ptr);
+int				ft_printstr(char *c);
+int				ft_putuns(unsigned int num, int bytes);
+int				ft_printuns(int num);
+
 #endif

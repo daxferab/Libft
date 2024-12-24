@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 20:40:15 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:53:29 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:13:24 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,19 +27,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(p, s2, s1len + s2len + 1);
 	return (p);
 }
-
-/*
-int main(void)
-{
-
-    char *s1 = "Hello, ";
-    char *s2 = "World!";
-    char *result1 = ft_strjoin(s1, s2);
-    printf("String 1: \"%s\"\nString 2: \"%s\"\n\
-	Result: \"%s\"\n\n", s1, s2, result1);
-
-    free(result1);
-
-    return 0;
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 19:12:12 by daxferna          #+#    #+#             */
-/*   Updated: 2024/03/09 23:09:29 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/24 17:12:56 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,5 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (i < ft_strlen(s))
-		ft_putchar_fd(s[i++], fd);
+	write(fd, s, ft_strlen(s));
 }
-
-/*
-int main(void)
-{
-    ft_putstr_fd("Hello, World!", 1);
-    ft_putchar_fd('\n', 1);
-
-    return 0;
-}
-*/
