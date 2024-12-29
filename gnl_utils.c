@@ -1,43 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   gnl_utils.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/20 12:42:58 by daxferab          #+#    #+#             */
-/*   Updated: 2024/12/24 17:37:00 by daxferna         ###   ########.fr       */
+/*   Created: 2024/12/29 20:03:41 by daxferna          #+#    #+#             */
+/*   Updated: 2024/12/29 20:04:42 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
-{
-	void	*p;
-	size_t	total;
-
-	total = count * size;
-	p = malloc(total);
-	if (!p)
-		return (NULL);
-	while (total--)
-		((unsigned char *)p)[total] = 0;
-	return (p);
-}
-
 int	ft_findnl(char *str)
 {
-	int	i;
-
-	i = 0;
 	if (!str)
 		return (0);
-	while (str[i])
+	while (*str)
 	{
-		if (str[i] == '\n')
+		if (*str == '\n')
 			return (1);
-		i++;
+		str++;
 	}
 	return (0);
+}
+
+char	*ft_strjoin_gnl(char *s1, char *s2)
+{
+	char	*join;
+	int		i;
+	int		j;
+
+	i = 0;
+	j = 0;
+	join = ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, sizeof(char));
+	if (!join)
+		return (NULL);
+	while (s1[i])
+	{
+		join[i] = s1[i];
+		i++;
+	}
+	while (s2[j])
+	{
+		join[i] = s2[j];
+		i++;
+		j++;
+	}
+	free(s1);
+	join[i] = '\0';
+	return (join);
 }

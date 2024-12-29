@@ -9,7 +9,7 @@ ft_strrchr.c ft_strnstr.c ft_strnstr.c ft_strlcat.c ft_calloc.c ft_strdup.c\
 ft_atoi.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_putchar_fd.c ft_itoa.c\
 ft_putendl_fd.c ft_putstr_fd.c ft_striteri.c ft_strmapi.c ft_putnbr_fd.c ft_split.c\
 ft_printchar.c ft_printstr.c ft_printptr.c ft_printuns.c ft_printhex.c ft_printf.c\
-ft_printnbr.c get_next_line.c get_next_line_utils.c
+ft_printnbr.c get_next_line.c gnl_utils.c
 
 
 BONUS_FILES = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c\

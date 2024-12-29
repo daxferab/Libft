@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:43:01 by daxferab          #+#    #+#             */
-/*   Updated: 2024/12/24 17:36:50 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/12/29 20:05:06 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ char	*ft_read(int fd, char *remainder, char *buffer)
 		else if (bytesread <= 0)
 			break ;
 		buffer[bytesread] = '\0';
-		remainder = ft_strjoin(remainder, buffer);
+		remainder = ft_strjoin_gnl(remainder, buffer);
 		if (!remainder)
 			free(buffer);
 	}
