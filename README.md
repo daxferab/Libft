@@ -3,7 +3,7 @@ Expandible library with owner`s functions
 ## Mandatory part
 ### Part 1 - Replicate existing C functions
 ### Part 2 - Extra functions
-### Bonus part (working with lists)
+### Bonus part - Working with lists
 ### Printf
 Existing project that replicates printf function
 ### GNL
