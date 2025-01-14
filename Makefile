@@ -28,7 +28,6 @@ OBJ_FILES = $(SRC_FILES:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ_FILES)
-	$(CC) -c $(CFLAGS) $(SRC_FILES)
 	ar -rcs $(NAME) $(OBJ_FILES)
 
 clean:
