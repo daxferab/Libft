@@ -21,6 +21,8 @@ SRC_FILES = mandatory/ft_isalnum.c mandatory/ft_isalpha.c mandatory/ft_isascii.c
 			bonus/ft_lstdelone_bonus.c bonus/ft_lstclear_bonus.c bonus/ft_lstiter_bonus.c\
 			bonus/ft_lstmap_bonus.c
 
+SRC_FILES := $(addprefix src/, $(SRC_FILES))
+
 OBJ_FILES = $(SRC_FILES:.c=.o)
 
 all: $(NAME)
