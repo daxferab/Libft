@@ -16,16 +16,12 @@ SRC_FILES = mandatory/ft_isalnum.c mandatory/ft_isalpha.c mandatory/ft_isascii.c
 			mandatory/ft_putnbr_fd.c mandatory/ft_split.c ft_printf/ft_printchar.c\
 			ft_printf/ft_printstr.c ft_printf/ft_printptr.c ft_printf/ft_printuns.c\
 			ft_printf/ft_printhex.c ft_printf/ft_printf.c ft_printf/ft_printnbr.c\
-			GNL/get_next_line.c GNL/gnl_utils.c
-
-
-BONUS_FILES = bonus/ft_lstnew_bonus.c bonus/ft_lstadd_front_bonus.c\
-bonus/ft_lstsize_bonus.c bonus/ft_lstlast_bonus.c bonus/ft_lstadd_back_bonus.c\
-bonus/ft_lstdelone_bonus.c bonus/ft_lstclear_bonus.c bonus/ft_lstiter_bonus.c\
-bonus/ft_lstmap_bonus.c
+			GNL/get_next_line.c GNL/gnl_utils.c bonus/ft_lstnew_bonus.c bonus/ft_lstadd_front_bonus.c\
+			bonus/ft_lstsize_bonus.c bonus/ft_lstlast_bonus.c bonus/ft_lstadd_back_bonus.c\
+			bonus/ft_lstdelone_bonus.c bonus/ft_lstclear_bonus.c bonus/ft_lstiter_bonus.c\
+			bonus/ft_lstmap_bonus.c
 
 OBJ_FILES = $(SRC_FILES:.c=.o)
-OBJ_BONUS = $(BONUS_FILES:.c=.o)
 
 all: $(NAME)
 
@@ -33,15 +29,12 @@ $(NAME): $(OBJ_FILES)
 	$(CC) -c $(CFLAGS) $(SRC_FILES)
 	ar -rcs $(NAME) $(OBJ_FILES)
 
-bonus: $(OBJ_BONUS)
-	ar rcs $(NAME) $(OBJ_BONUS)
-
 clean:
-	rm -f $(OBJ_FILES) $(OBJ_BONUS)
+	rm -f $(OBJ_FILES)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re
