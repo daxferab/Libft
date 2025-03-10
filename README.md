@@ -47,7 +47,14 @@ To compile the library, run the following command in the root of the project:
 ```
 make
 ```
-### 👾​ Use
+This will generate a libft.a file that you can link in your projects.
+
+#### 🧩 Include in Your Project
+To use libft in your project, include the header file and link the library:
 ```
-cc <files> libft.a
+#include "libft.h"
+```
+And compile your project with:
+```
+gcc -Wall -Wextra -Werror -Iincludes -L. -lft your_program.c -o your_program
 ```
