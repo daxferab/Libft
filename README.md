@@ -17,7 +17,7 @@ libft/
 ├── .gitignore  
 ├── Makefile            # Makefile to compile the project  
 ├── README.md           # This file  
-└── libft.h             # Header file  
+└── include/libft.h     # Header file (.h)  
 
 
 ### 📜 Implemented Functions
