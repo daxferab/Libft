@@ -6,11 +6,11 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 18:53:08 by daxferna          #+#    #+#             */
-/*   Updated: 2025/01/13 22:23:28 by daxferna         ###   ########.fr       */
+/*   Updated: 2025/03/22 18:55:56 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

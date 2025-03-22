@@ -6,11 +6,11 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 20:23:47 by daxferna          #+#    #+#             */
-/*   Updated: 2025/01/13 22:23:28 by daxferna         ###   ########.fr       */
+/*   Updated: 2025/03/22 18:55:56 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
 
 void	*ft_bzero(void *b, size_t len)
 {
