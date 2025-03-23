@@ -23,10 +23,10 @@ libft/
 ### 📜 Implemented Functions
 
 #### 🧱 Basic Functions (Part 1 and 2)
-- **Memory Functions**: `bzero`, `calloc`, `memchr`, `memcmp`, `memcpy`, `memmove`, `memset` 
-- **String Functions**: `atoi`, `itoa`, `split`, `strchr`, `strdup`, `striteri`, `strjoin`, `strlcat`, `strlcpy`, `strlen`, `strmapi`, `strncmp`, `strnstr`, `strrchr`, `strtrim`, `substr`, 
 - **Character Functions**: `isalnum`, `isalpha`, `isascii`, `isdigit`, `isprint`, `tolower`, `toupper`
+- **Memory Functions**: `bzero`, `calloc`, `memchr`, `memcmp`, `memcpy`, `memmove`, `memset` 
 - **Output Functions**: `putchar_fd`, `putendl_fd`, `putnbr_fd`, `putstr_fd`
+- **String Functions**: `atoi`, `itoa`, `split`, `strchr`, `strdup`, `striteri`, `strjoin`, `strlcat`, `strlcpy`, `strlen`, `strmapi`, `strncmp`, `strnstr`, `strrchr`, `strtrim`, `substr`, 
 
 #### 🎁 Bonus Functions
 - **Linked List Functions**: `lstadd_back`, `lstadd_front`, `lstclear`, `lstdelone`, `lstiter`, `lstlast`, `lstmap`, `lstnew`, `lstsize`
